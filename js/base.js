@@ -87,6 +87,9 @@ document.querySelector('div.index-search').addEventListener("click",(function(){
     document.querySelector('div.index-search').classList.add('active');
     document.querySelector('div.container0 p').style.display = "none";
     document.querySelector('div.container0 input').removeAttribute('style');
+    for (let x = 0; x < document.querySelectorAll('h3').length; x++) {
+        document.querySelectorAll('h3')[x].style.display = "none";
+    }
   }
 }));
 } catch(err) {
