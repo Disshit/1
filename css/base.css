@@ -125,6 +125,9 @@ section > p {
 h3 {
     margin: 40px 0 0 0;
 }
+h3#no {
+    margin: 20px 0 0 0;
+}
 @media only screen and (min-width: 960px) {
   .container,.container0,.container2{
     width: calc(960px - 140px);
