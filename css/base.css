@@ -66,10 +66,6 @@ a:hover {color: #b97813;}
     color: #eeeeee;
     text-align: left;
 }
-.container > p {
-    max-width: 460px;
-    margin: 25px auto;
-}
 .container2 {
     background: #1c1c1cc1;
     border: 2px solid #282828;
@@ -95,6 +91,10 @@ a:hover {color: #b97813;}
     color: #eeeeee;
     font-weight: 700;
     text-align: center;
+}
+.container0 > p {
+    max-width: 460px;
+    margin: 25px auto;
 }
 .container0 > p > a {
     color: #ec9918;
