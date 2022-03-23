@@ -75,7 +75,20 @@ let i;
 for (i = 0; i < num; i++) {
 	postLoop(i);
 }
-}
-catch(err) {
+
+// Search Toggle
+document.querySelector('div.index-search').addEventListener("click",(function(){
+  if (document.querySelector('div.index-search').className.match(/active/)) {
+    document.querySelector('div.index-search').classList.remove('active');
+    setTimeout((function(){
+      window.location.href = document.location.protocol + "//" + document.location.hostname + document.location.pathname + document.location.search;
+    }), 10);
+  } else {
+    document.querySelector('div.index-search').classList.add('active');
+    document.querySelector('div.container0 p').style.display = "none";
+    document.querySelector('div.container0 input').removeAttribute('style');
+  }
+}));
+} catch(err) {
 	document.getElementsByTagName('html')[0].innerHTML = "";
 }
