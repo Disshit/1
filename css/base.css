@@ -136,6 +136,7 @@ h3[id*='no'] {
   background: #161616;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 99999;
 }
 .index-search:hover {
   fill: #161616;
