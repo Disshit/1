@@ -94,7 +94,8 @@ document.querySelector('div.index-search').addEventListener("click",(function(){
 }));
 
 // Search Engine (sort of)
-document.querySelector('input').addEventListener("input",(function(){
+//document.querySelector('input').addEventListener("input",(function(){
+function searchSubmit() {
   for (let x = 0; x < document.querySelectorAll('a[post]').length; x++) {
     var match = new RegExp(document.querySelector('input').value, 'gi');
     var string = document.querySelectorAll('a[post]')[x].innerHTML;
@@ -104,7 +105,8 @@ document.querySelector('input').addEventListener("input",(function(){
       document.querySelectorAll('a[post]')[x].parentNode.style.display = "none";
     }
   }
-}));
+}
+//}));
 } catch(err) {
 	document.getElementsByTagName('html')[0].innerHTML = "";
 }
