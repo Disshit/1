@@ -19,14 +19,14 @@
     scrollbar-color: #000000ff #96969600 !important;
 }
 ::selection {
-  color: #161616;
-  background: #eeeeee;
+    color: #161616;
+    background: #eeeeee;
 }
 html {
     height: 100%;
     font-family: "Ubuntu", sans-serif;
     font-size: 1em;
-	color: #ffffff;
+    color: #ffffff;
     line-height: 1;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -42,7 +42,7 @@ body {
 a {
     color: #ec9918;
     text-decoration: none;
-	outline: none;
+    outline: none;
 }
 a:hover {color: #b97813;}
 .flex {
@@ -59,6 +59,7 @@ a:hover {color: #b97813;}
     border: 2px solid #282828;
     border-radius: 15px;
     box-shadow: 0 0 20px #0008;
+    width: calc(100% - 140px);
     padding: 35px;
     margin: 15px 35px 15px 35px;
     line-height: 1;
@@ -70,11 +71,12 @@ a:hover {color: #b97813;}
     border: 2px solid #282828;
     border-radius: 15px;
     box-shadow: 0 0 20px #0008;
+    width: calc(100% - 140px);
     padding: 0 35px;
     margin: 35px 35px 45px 35px;
     line-height: 1;
     color: #eeeeee;
-	font-weight: 700;
+    font-weight: 700;
     text-align: left;
 }
 .container0 {
@@ -82,93 +84,99 @@ a:hover {color: #b97813;}
     border: 2px solid #282828;
     border-radius: 15px;
     box-shadow: 0 0 20px #0008;
+    width: calc(100% - 140px);
     padding: 0 35px;
     margin: 45px 35px 35px 35px;
     line-height: 1;
     color: #eeeeee;
-	font-weight: 700;
+    font-weight: 700;
     text-align: center;
 }
 .container0 > p > a {
-	color: #ec9918;
-	padding: 5px;
-	border: 2px solid #ec9918;
-	margin: 3px;
+    color: #ec9918;
+    padding: 5px;
+    border: 2px solid #ec9918;
+    margin: 3px;
 }
 .container0 > p > a:hover, .info:hover {
-	color: #111111;
-	background: #ec9918;
+    color: #111111;
+    background: #ec9918;
 }
 .info {
-	color: #ec9918;
-	padding: 1px 8px;
-	border: 2px solid #ec9918;
-	border-radius: 50%;
-	font-weight: 700;
-	margin-right: 8px;
+    color: #ec9918;
+    padding: 1px 8px;
+    border: 2px solid #ec9918;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-right: 8px;
 }
 section {
-	display: flex;
-	flex-direction: column;
-	line-height: 2;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
 }
 section > p {
-	margin-bottom: -10px;
+    margin-bottom: -10px;
 }
 h3 {
-	margin: 40px 0 0 0;
+    margin: 40px 0 0 0;
 }
 h3[id*='no'] {
-	margin: 0;
+    margin: 0;
+}
+@media only screen and (min-width: 960px) {
+  .container,.container0,.container2{
+    width: calc(960px - 140px);
+  }
 }
 
 /* --------------------------
 :: Search Stuff
 -------------------------- */
 .index-search {
-  fill: #ec9918;
-  border: 2px solid #ec9918;
-  height: 34px;
-  width: 34px;
-  position: fixed;
-  left: 40px;
-  bottom: 50px;
-  background: #161616;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 99999;
+    fill: #ec9918;
+    border: 2px solid #ec9918;
+    height: 34px;
+    width: 34px;
+    position: fixed;
+    left: 40px;
+    bottom: 50px;
+    background: #161616;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 99999;
 }
 .index-search:hover {
-  fill: #161616;
-  background: #ec9918;
+    fill: #161616;
+    background: #ec9918;
 }
 .index-search > svg {
-  height: 20px;
-  width: 20px;
-  padding: 7px;
+    height: 20px;
+    width: 20px;
+    padding: 7px;
 }
 .index-search > svg:first-of-type {
-  display: block;
+    display: block;
 }
 .index-search > svg:last-of-type {
-  display: none;
+    display: none;
 }
 .index-search.active > svg:first-of-type {
-  display: none;
+    display: none;
 }
 .index-search.active > svg:last-of-type {
-  display: block;
+    display: block;
 }
 .container0 input {
-  outline: none;
-  color: #ec9918;
-  background: transparent;
-  border: 2px solid #ec9918cc;
-  border-radius: 7px;
-  padding: 5px;
-  width: calc(100% - 17.5px);
-  margin: 25px 0;
+    outline: none;
+    color: #ec9918;
+    background: transparent;
+    border: 2px solid #ec9918cc;
+    border-radius: 7px;
+    padding: 5px;
+    width: calc(100% - 17.5px);
+    margin: 25px 0;
 }
 .container0 input:focus {
-  border: 2px solid #ec9918;
+    border: 2px solid #ec9918;
 }
