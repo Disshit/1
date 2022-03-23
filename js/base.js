@@ -92,6 +92,19 @@ document.querySelector('div.index-search').addEventListener("click",(function(){
     }
   }
 }));
+
+// Search Engine (sort of)
+document.querySelector('input').addEventListener("input",(function(){
+  for (let x = 0; x < document.querySelectorAll('a[post]').length; x++) {
+    var match = new RegExp(document.querySelector('input').value, 'gi');
+    var string = document.querySelectorAll('a[post]')[x].innerHTML;
+    if(match.test(string)){
+      document.querySelectorAll('a[post]')[x].parentNode.removeAttribute('style');
+    } else { 
+      document.querySelectorAll('a[post]')[x].parentNode.style.display = "none";
+    }
+  }
+}));
 } catch(err) {
 	document.getElementsByTagName('html')[0].innerHTML = "";
 }
