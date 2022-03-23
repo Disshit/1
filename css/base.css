@@ -60,7 +60,7 @@ a:hover {color: #b97813;}
     border-radius: 15px;
     box-shadow: 0 0 20px #0008;
     width: calc(100% - 140px);
-    padding: 35px;
+    padding: 15px 35px 35px 35px;
     margin: 15px 35px 15px 35px;
     line-height: 1;
     color: #eeeeee;
@@ -120,9 +120,6 @@ section > p {
 }
 h3 {
     margin: 40px 0 0 0;
-}
-h3[id*='no'] {
-    margin: 0;
 }
 @media only screen and (min-width: 960px) {
   .container,.container0,.container2{
