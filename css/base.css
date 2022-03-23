@@ -121,3 +121,53 @@ h3 {
 h3[id*='no'] {
 	margin: 0;
 }
+
+/* --------------------------
+:: Search Stuff
+-------------------------- */
+.index-search {
+  fill: #ec9918;
+  border: 2px solid #ec9918;
+  height: 34px;
+  width: 34px;
+  position: fixed;
+  left: 40px;
+  bottom: 50px;
+  background: #161616;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.index-search:hover {
+  fill: #161616;
+  background: #ec9918;
+}
+.index-search > svg {
+  height: 20px;
+  width: 20px;
+  padding: 7px;
+}
+.index-search > svg:first-of-type {
+  display: block;
+}
+.index-search > svg:last-of-type {
+  display: none;
+}
+.index-search.active > svg:first-of-type {
+  display: none;
+}
+.index-search.active > svg:last-of-type {
+  display: block;
+}
+.container0 input {
+  outline: none;
+  color: #ec9918;
+  background: transparent;
+  border: 2px solid #ec9918cc;
+  border-radius: 7px;
+  padding: 5px;
+  width: calc(100% - 17.5px);
+  margin: 25px 0;
+}
+.container0 input:focus {
+  border: 2px solid #ec9918;
+}
