@@ -95,6 +95,10 @@ document.querySelector('div.index-search').addEventListener("click",(function(){
   }
 }));
 
+document.querySelector('div.container0 h1').addEventListener("click",(function(){
+	window.location.href = document.location.protocol + "//" + document.location.hostname + document.location.pathname + document.location.search;
+}));
+
 // Search Engine (sort of)
 //document.querySelector('input').addEventListener("input",(function(){
 function searchSubmit() {

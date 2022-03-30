@@ -55,6 +55,9 @@ a:hover {color: #b97813;}
     align-items: center;
 }
 .flex-column {flex-direction: column;}
+.container0 h1 {
+	cursor: pointer;
+}
 .container {
     background: #1c1c1cc1;
     border: 2px solid #282828;
